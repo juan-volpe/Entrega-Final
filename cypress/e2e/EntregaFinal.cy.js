@@ -8,21 +8,21 @@ import { ReciptPage       } from '../support/Pages/ReciptPage';
 
 describe('Entrega-Final - Juan Francisco Volpe', () => {
     
-    const homePage         = new HomePage();
-    const productsPage     = new ProductsPage();
+    const homePage = new HomePage();
+    const productsPage = new ProductsPage();
     const shoppingCartPage = new ShoppingCartPage();
-    const checkOutPage     = new CheckOutPage();
-    const reciptPage       = new ReciptPage();
+    const checkOutPage = new CheckOutPage();
+    const reciptPage = new ReciptPage();
 
-    let username     = 'juan14';
-    let password     = '775588!';
-    let gender       = 'Male';
-    let year         = '1987';
-    let month        = 'June';
-    let day          = '28';
+    let username = 'juan14';
+    let password = '775588!';
+    let gender = 'Male';
+    let year = '1987';
+    let month = 'June';
+    let day = '28';
     let productsData = '';
     let checkOutData = '';
-    let totalPrice   = 0;
+    let totalPrice = 0;
         
     before('Debería poder registrarse a la página web y setear toda la data correctamente', () => {
 
@@ -71,13 +71,7 @@ describe('Entrega-Final - Juan Francisco Volpe', () => {
         cy.url().should('contain', 'pushing');
     });
     
-    it('Debería poder: ' +
-        'Ir al módulo "Online Shop" ' + 
-        'Elegir 2 productos a elección y añadirlos al carrito ' +   
-        'Verificar el nombre y el precio de los dos productos ' +
-        'Hacer click en "Show total price" y verificar el precio acumulado de los 2 productos ' +
-        'Completar el checkout con su nombre, apellido y una tarjeta de crédito de 16 dígitos ' +
-        'Verificar los siguientes datos en el ticket de compra (nombre y apellido, productos, tarjeta de crédito, costo total)', () => {
+    it('Verificar que dos productos pueden ser comprados al mismo tiempo', () => {
         
         homePage.clickOnlineShopLinkButton();
 
