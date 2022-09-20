@@ -1,10 +1,10 @@
 /// <reference types='cypress' />
 
-import { HomePage         } from '../support/Pages/HomePage';
-import { ProductsPage     } from '../support/Pages/ProductsPage';
+import { HomePage } from '../support/Pages/HomePage';
+import { ProductsPage } from '../support/Pages/ProductsPage';
 import { ShoppingCartPage } from '../support/Pages/ShoppingCartPage';
-import { CheckOutPage     } from '../support/Pages/CheckOutPage';
-import { ReciptPage       } from '../support/Pages/ReciptPage';
+import { CheckOutPage } from '../support/Pages/CheckOutPage';
+import { ReciptPage } from '../support/Pages/ReciptPage';
 
 describe('Entrega-Final - Juan Francisco Volpe', () => {
     

@@ -3,8 +3,8 @@
 export class CheckOutPage {
 
     constructor() {
-        this.firstNameInput  = '#FirstName';
-        this.lastNameInput   = '#lastName';
+        this.firstNameInput = '#FirstName';
+        this.lastNameInput = '#lastName';
         this.cardNumberInput = '#cardNumber';
     };
 

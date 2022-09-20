@@ -3,8 +3,8 @@
 export class ReciptPage {
 
     constructor() {
-        this.creditCard   = '#creditCard';
-        this.totalPrice   = '#totalPrice';    
+        this.creditCard = '#creditCard';
+        this.totalPrice = '#totalPrice';    
     };
 
     verifyFirstNameAndLastName(firstName, lastName) {
